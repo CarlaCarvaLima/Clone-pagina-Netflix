@@ -1,2 +1,2 @@
-# Clone-p-gina-Netflix
+# Clone-pagina-Netflix
 Clone da página da Netflix
