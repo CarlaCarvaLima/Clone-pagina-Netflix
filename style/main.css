@@ -191,6 +191,10 @@ header nav a:hover {
      margin-left: 20px;   
  }
 
+ #cardCobra{
+    display: none;
+ }
+
  
 
 
