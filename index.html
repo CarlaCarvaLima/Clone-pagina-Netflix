@@ -8,18 +8,16 @@
     <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
     <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
     <link rel="stylesheet" href="style/responsive.css">
-    <link rel="icon" href="../Clonando página da Netflix/favicon.ico" sizes="32x32"/>
-
+    <link rel="icon" href="favicon.ico" sizes="32x32"/>
 </head>
 <body>
     <header>
         <div class="container">
             <img class="netflix-logo" src="assets/img/netflix-logo.png" alt="logo Netflix">
             <nav>
-                <a href="#">Inicio</a>
-                <a href="#">Séries</a>
-                <a href="#">Filmes</a>
-                <a href="#">Documentários</a>
+                <a href="index.html">Inicio</a>
+                <a href="#series">Séries</a>
+                <a href="#filmes">Filmes</a>
             </nav>
         </div>
     </header>
@@ -27,50 +25,631 @@
         <div class="filme-principal">
             <div class="container">
                 <h3 class="titulo-principal">Cobra Kai</h3>
-                <p class="descricao">
+                <p class="descricao-principal">
                     Esta sequência de Karate Kid pega 30 anos depois dos eventos do All Valley Karate Tournament de 1984 e encontra Johnny Lawrence em busca de redenção reabrindo o infame dojo de karate Cobra Kai . Isso reacende sua antiga rivalidade com o bem-sucedido Daniel LaRusso, que vem trabalhado para manter o equilíbrio em sua vida sem o seu mentor Miyagi.
                 </p>
                 <div class="botoes">
-                    <button role="button" class="botao"><i class="fas fa-play"></i>ASSISTIR AGORA</button>
-                    <button role="button" class="botao"><i class="fas fa-info-circle"></i>MAIS INFORMAÇÕES</button>
+                    <button onclick="window.open('https://www.youtube.com/watch?v=xCwwxNbtK6Y&t=2s&ab_channel=CobraKai');" class="botao"><i class="fas fa-play"></i>ASSISTIR AGORA</button>
+                    <button  onclick="Mostra('cardCobra')" role="button" class="botao"><i class="fas fa-info-circle"></i>MAIS INFORMAÇÕES</button>
+                </div>
+                <div  id="cardCobra" class="info-cobra">
+                    <div class="card">
+                        <div class="genero">
+                            <p>Gênero: Ação, Aventura, Drama</p>
+                        </div>
+                        <div class="classificacao">
+                            <h4>Classificação:</h4> <img class="logo" src="assets/img/classificacao-12-anos-logo.png" alt="classificação +12"> 
+                        </div>
+                        <div class="elenco">
+                            <p>Elenco:  Ralph Macchio, Willian Zabka, Courtney Henggeler, Xolo Mariduena, Tanner Buchanan, Mary Mouser,Jacob Bertrand, Gianni Decenzo </p>
+                        </div>
+                        <div class="duracao">
+                            <p>Duração: 30m</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
-    <div class="carrossel">
+    <div class="carrossel-series">
+        <h3 id="series">Séries</h3>
         <div class="owl-carousel owl-theme">
-            <div class="item">
-                <img class="box-filme" src="assets/img/bigmouth-min.jpg" alt="imagem Big Mouth">
+            <div class="flip-container">
+                <div class="flipper">
+                    <div class="front">
+                        <div class="item">
+                            <img class="box-serie" src="assets/img/bigmouth-min.jpg" alt="imagem Big Mouth">
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="card-title">Big Mouth (2017)</h2>
+                                <p class="card-text">Sinopse: Uma turma de amigos vive ao sabor das maravilhas e horrores da puberdade nesta comédia dos amigos Nick Kroll e Andrew Goldberg.</p>
+                            </div>
+                            <div class="genero">
+                                <p>Gênero: Animação, Comédia</p>
+                            </div>
+                            <div class="classificacao">
+                                <h4>Classificação:</h4> <img class="logo" src="assets/img/classificacao-16-anos-logo.png" alt="classificação +16"> 
+                            </div>
+                            <div class="elenco">
+                                <p>Elenco: Nick Kroll, John Mulaney, Fred Armisen, Jordan Peele, Jason Mantzoukas, Jessi Klein, Maya Rudolph, Jenny Slate, Joe Wengert </p>
+                            </div>
+                            <div class="duracao">
+                                <p>Duração: 27m</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="item">
-                <img class="box-filme" src="assets/img/clones-min.jpg" alt="imagem Star Wars - Clone Wars">
+            <div class="flip-container">
+                <div class="flipper">
+                    <div class="front">
+                        <div class="item">
+                            <img class="box-serie" src="assets/img/dorohedoro-min.jpg" alt="imagem Dorohedoro">
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="card-title">Dorohedoro (2020)</h2>
+                                <p class="card-text">Sinopse: Com um caso grave de amnésia, Caiman conta com a ajuda de sua amiga Nikaido para tentar encontrar e matar o feiticeiro que o deixou com cabeça de lagarto.</p>
+                            </div>
+                            <div class="genero">
+                                <p>Gênero: Animação, Comédia, Ação, Aventura, Fantasia</p>
+                            </div>
+                            <div class="classificacao">
+                                <h4>Classificação:</h4> <img class="logo" src="assets/img/classificacao-16-anos-logo.png" alt="classificação +16"> 
+                            </div>
+                            <div class="elenco">
+                                <p>Elenco: Songdo, Reina Kondō, Wataru Takagi, Yū Kobayashi, Yoshimasa Hosoya, Ken'yuu Horiuchi, Kengo Takanashi, Miyu Tomita, Mitsuhiro Ichiki</p>
+                            </div>
+                            <div class="duracao">
+                                <p>Duração: 27m</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="item">
-                <img class="box-filme" src="assets/img/dark-min.jpg" alt="imagem Dark">
+            <div class="flip-container">
+                <div class="flipper">
+                    <div class="front">
+                        <div class="item">
+                            <img class="box-serie" src="assets/img/kengan-min.jpg" alt="imagem Kengan Ashura">
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="card-title">Kengan Ashura (2019)</h2>
+                                <p class="card-text">Sinopse: Ohma Tokita ingressa em um mundo secreto onde as disputas de negócios são resolvidas em combates entre gladiadores. Esqueça o dinheiro. Ele só quer lutar e vencer.</p>
+                            </div>
+                            <div class="genero">
+                                <p>Gênero: Animação, Ação, Aventura, Artes marciais</p>
+                            </div>
+                            <div class="classificacao">
+                                <h4>Classificação:</h4> <img class="logo" src="assets/img/classificacao-18-anos-logo.png" alt="classificação +18"> 
+                            </div>
+                            <div class="elenco">
+                                <p>Elenco: Hayato Kaneko, Junya Enoki, Yumi Uchiyama, Tetsu Inada, Daisuke Hirakawa, Tatsuhisa Suzuki, Chō, Daisuke Namikawa </p>
+                            </div>
+                            <div class="duracao">
+                                <p>Duração: 23m</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="item">
-                <img class="box-filme" src="assets/img/kengan-min.jpg" alt="imagem Kengan Ashura">
+            <div class="flip-container">
+                <div class="flipper">
+                    <div class="front">
+                        <div class="item">
+                            <img class="box-serie" src="assets/img/dark-min.jpg" alt="imagem Dark">
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="card-title">Dark (2017)</h2>
+                                <p class="card-text">Sinopse: Quatro famílias iniciam uma desesperada busca por respostas quando uma criança desaparece e um complexo mistério envolvendo três gerações começa a se revelar.</p>
+                            </div>
+                            <div class="genero">
+                                <p>Gênero: Fantasia, Sci-Fi, Drama, Mistério, Crime</p>
+                            </div>
+                            <div class="classificacao">
+                                <h4>Classificação:</h4> <img class="logo" src="assets/img/classificacao-16-anos-logo.png" alt="classificação +16"> 
+                            </div>
+                            <div class="elenco">
+                                <p>Elenco: Louis Hofmann, Lisa Vicari, Andreas Pietschmann, Daan Lennard Liebrenz, Mark Waschke, Oliver Masucci, Jördis Triebel</p>
+                            </div>
+                            <div class="duracao">
+                                <p>Duração: 53m</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="item">
-                <img class="box-filme" src="assets/img/lucifer-min.jpg" alt="imagem Lucifer">
+            <div class="flip-container">
+                <div class="flipper">
+                    <div class="front">
+                        <div class="item">
+                            <img class="box-serie" src="assets/img/lucifer-min.jpg" alt="imagem Lucifer">
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="card-title">Lúcifer (2016)</h2>
+                                <p class="card-text">Sinopse: Entediado com a vida nas trevas, o diabo se muda para Los Angeles, abre um piano-bar e empresta sua sabedoria a uma investigadora de assassinatos.</p>
+                            </div>
+                            <div class="genero">
+                                <p>Gênero: Crime,Fantasia, Investigação</p>
+                            </div>
+                            <div class="classificacao">
+                                <h4>Classificação:</h4> <img class="logo" src="assets/img/classificacao-16-anos-logo.png" alt="classificação +16"> 
+                            </div>
+                            <div class="elenco">
+                                <p>Elenco: Tom Ellis, Lauren German, Kevin Alejandro, D.B. Woodside, Lesley-Ann Brandit, Rachael Harris, Scarlett Estevez, Aimee Garcia, Tricia Helfer</p>
+                            </div>
+                            <div class="duracao">
+                                <p>Duração: 45m</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="item">
-                <img class="box-filme" src="assets/img/orange-min.jpg" alt="imagem Orange is the New Black">
+            <div class="flip-container">
+                <div class="flipper">
+                    <div class="front">
+                        <div class="item">
+                            <img class="box-serie" src="assets/img/orange-min.jpg" alt="imagem Orange">
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="card-title">Orange is the New Black (2013)</h2>
+                                <p class="card-text">Sinopse: Um crime cometido no passado coloca uma privilegiada nova-iorquina na prisão, onde ela faz várias amigas. E inimigas.</p>
+                            </div>
+                            <div class="genero">
+                                <p>Gênero: Comédia, Drama</p>
+                            </div>
+                            <div class="classificacao">
+                                <h4>Classificação:</h4> <img class="logo" src="assets/img/classificacao-18-anos-logo.png" alt="classificação +18"> 
+                            </div>
+                            <div class="elenco">
+                                <p>Elenco: Dascha Polanco, Taylor Schilling, Laura Prepon, Danielle Brooks, Kate Mulgrew, Taryn Manning, Selenis Leyva, Uzo Aduba, Yael Stone</p>
+                            </div>
+                            <div class="duracao">
+                                <p>Duração: 1h</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="item">
-                <img class="box-filme" src="assets/img/punisher-min.jpg" alt="imagem The Punisher">
+            <div class="flip-container">
+                <div class="flipper">
+                    <div class="front">
+                        <div class="item">
+                            <img class="box-serie" src="assets/img/punisher-min.jpg" alt="imagem Punisher">
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="card-title">O Justiceiro (2017)</h2>
+                                <p class="card-text">Sinopse: O ex-marine Frank Castle só quer punir os criminosos responsáveis pela morte da sua família, mas torna-se alvo de uma conspiração militar.</p>
+                            </div>
+                            <div class="genero">
+                                <p>Gênero: Ação, Aventura, Crime, Drama</p>
+                            </div>
+                            <div class="classificacao">
+                                <h4>Classificação:</h4> <img class="logo" src="assets/img/classificacao-18-anos-logo.png" alt="classificação +18"> 
+                            </div>
+                            <div class="elenco">
+                                <p>Elenco: Jon Bernthal, Ben Barnes, Amber Rose Revah, Jason R. Moore, Deborah Ann Woll, Ebon Moss-Bachrach, Josh Stewart, Floriana Lima, Jaime Ray Newman</p>
+                            </div>
+                            <div class="duracao">
+                                <p>Duração: 53m</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="item">
-                <img class="box-filme" src="assets/img/sabrina-min.jpg" alt="imagem o Mundo Sombrio de Sabrina">
+            <div class="flip-container">
+                <div class="flipper">
+                    <div class="front">
+                        <div class="item">
+                            <img class="box-serie" src="assets/img/sabrina-min.jpg" alt="imagem Sabrina">
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="card-title">O Mundo Sombrio de Sabrina (2018)</h2>
+                                <p class="card-text">Sinopse: Bruxa e também mortal, a jovem Sabrina Spellman fica dividida entre a vida normal de adolescente e o legado de sua família feiticeira.</p>
+                            </div>
+                            <div class="genero">
+                                <p>Gênero: Mistério, Fantasia, Drama </p>
+                            </div>
+                            <div class="classificacao">
+                                <h4>Classificação:</h4> <img class="logo" src="assets/img/classificacao-16-anos-logo.png" alt="classificação +16"> 
+                            </div>
+                            <div class="elenco">
+                                <p>Elenco: Kiernan Shipka, Ross Lynch, Lucy Davis, Miranda Otto, Chance Perdomo, Michelle Gomez, Jaz Sinclair, Richard Coyle, Tati Gabrielle</p>
+                            </div>
+                            <div class="duracao">
+                                <p>Duração: 1h</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div class="flip-container">
+                <div class="flipper">
+                    <div class="front">
+                        <div class="item">
+                            <img class="box-serie" src="assets/img/stranger-min.jpg" alt="imagem Stranger">
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="card-title">Stranger Things (2016)</h2>
+                                <p class="card-text">Sinopse: Quando um garoto desaparece, a cidade toda participa nas buscas. Mas o que encontram são segredos, forças sobrenaturais e uma menina.</p>
+                            </div>
+                            <div class="genero">
+                                <p>Gênero: Mistério, Fantasia, Drama </p>
+                            </div>
+                            <div class="classificacao">
+                                <h4>Classificação:</h4> <img class="logo" src="assets/img/classificacao-16-anos-logo.png" alt="classificação +16"> 
+                            </div>
+                            <div class="elenco">
+                                <p>Elenco: Winona Ryder, David Harbour, Finn Wolfhard, Millie Bobby Brown, Gaten Matarazzo, Caleb McLaughlin, Natalia Dyer, Charlie Heaton, Joe Keery</p>
+                            </div>
+                            <div class="duracao">
+                                <p>Duração: 50m</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="item">
-                <img class="box-filme" src="assets/img/stranger-min.jpg" alt="imagem Stranger Things">
-            </div>
-            <div class="item">
-                <img class="box-filme" src="assets/img/ultraman-min.jpg" alt="imagem Ultraman">
+            <div class="flip-container">
+                <div class="flipper">
+                    <div class="front">
+                        <div class="item">
+                            <img class="box-serie" src="assets/img/ultraman-min.jpg" alt="imagem Ultraman">
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="card-title">Ultraman (2019)</h2>
+                                <p class="card-text">Sinopse: Décadas atrás, um herói vindo das estrelas deixou o mundo em paz. Agora, o filho de Ultraman precisa proteger a Terra de uma nova ameaça alienígena.</p>
+                            </div>
+                            <div class="genero">
+                                <p>Gênero: Animação, Ação, Aventura, Sci-Fi, Fantasia</p>
+                            </div>
+                            <div class="classificacao">
+                                <h4>Classificação:</h4> <img class="logo" src="assets/img/classificacao-14-anos-logo.png" alt="classificação +14"> 
+                            </div>
+                            <div class="elenco">
+                                <p>Elenco: Josh Hutcherson, Liam O'Brien, Fred Tatasciore, Tara Sands, Brian Palermo, D.C. Douglas, Robbie Daymond, Gunnar Sizemore, Chris Edgerly</p>
+                            </div>
+                            <div class="duracao">
+                                <p>Duração: 25m</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <div class="carrossel-filmes">
+        <h3 id="filmes">Filmes</h3>
+        <div class="owl-carousel owl-theme">
+            <div class="flip-container">
+                <div class="flipper">
+                    <div class="front">
+                        <div class="item">
+                            <img class="box-serie" src="assets/img/bob-min.jpg" alt="imagem Bob">
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="card-title">Bob Esponja: O Incrível Resgate (2020)</h2>
+                                <p class="card-text">Sinopse: Segundo Bob Esponja, Gary foi "caracolstrado" pelo Rei Poseidon e levado para a cidade de Atlantic City. Junto a Patrick, ele sai em uma missão de resgate.</p>
+                            </div>
+                            <div class="genero">
+                                <p>Gênero: Animação, Fantasia, Aventura, Comédia, Família</p>
+                            </div>
+                            <div class="classificacao">
+                                <h4>Classificação:</h4> <img class="logo" src="assets/img/classificacao-livre-logo.png" alt="classificação livre"> 
+                            </div>
+                            <div class="elenco">
+                                <p>Elenco: Tom Kenny, Bill Fagerbakke, Rodger Bumpass, Mr. Lawrence, Keanu Reeves, Clancy Brown</p>
+                            </div>
+                            <div class="duracao">
+                                <p>Duração: 1h31m</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-container">
+                <div class="flipper">
+                    <div class="front">
+                        <div class="item">
+                            <img class="box-serie" src="assets/img/creed-min.jpg" alt="imagem Crred II">
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="card-title">Creed II (2018)</h2>
+                                <p class="card-text">Sinopse: Adonis Creed segue sua trajetória rumo ao campeonato mundial de boxe. Em sua próxima luta, ele precisa enfrentar um adversário que possui uma forte ligação com o passado de sua família.</p>
+                            </div>
+                            <div class="genero">
+                                <p>Gênero: Drama</p>
+                            </div>
+                            <div class="classificacao">
+                                <h4>Classificação:</h4> <img class="logo" src="assets/img/classificacao-12-anos-logo.png" alt="classificação +12"> 
+                            </div>
+                            <div class="elenco">
+                                <p>Elenco: Michael B. Jordan, Sylvester Stallone, Dolph Lundgren, Florian Munteanu, Tessa Thompson, Wood Harris, Phylicia Rashãd</p>
+                            </div>
+                            <div class="duracao">
+                                <p>Duração: 2h10m</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-container">
+                <div class="flipper">
+                    <div class="front">
+                        <div class="item">
+                            <img class="box-serie" src="assets/img/gato-min.jpg" alt="imagem Gato">
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="card-title">Olhos de Gato (2020)</h2>
+                                <p class="card-text">Sinopse: Ela se transforma em uma gata para conquistar o crush. Mas, sem que se dê conta, fica cada vez mais difícil distinguir a versão humana da animal.</p>
+                            </div>
+                            <div class="genero">
+                                <p>Gênero: Animação, Drama, Romance, Fantasia</p>
+                            </div>
+                            <div class="classificacao">
+                                <h4>Classificação:</h4> <img class="logo" src="assets/img/classificacao-10-anos-logo.png" alt="classificação +10"> 
+                            </div>
+                            <div class="elenco">
+                                <p>Elenco: Mirai Shida, Natsuki Hanae, Kouichi Yamadera, Hiroaki Ogi, Minako Kotobuki, Kensho Ono, Susumu Chiba, Ayako Kawasumi, Sayaka Ohara</p>
+                            </div>
+                            <div class="duracao">
+                                <p>Duração: 1h44m</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-container">
+                <div class="flipper">
+                    <div class="front">
+                        <div class="item">
+                            <img class="box-serie" src="assets/img/godzilla-min.jpg" alt="imagem Godzilla">
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="card-title">Godzilla (2014)</h2>
+                                <p class="card-text">Sinopse: Joe Brody criou o filho sozinho após a morte da esposa. Ford Brody, agora adulto, é soldado do exército americano e precisa lutar para salvar a população mundial e sua família do Godzilla.</p>
+                            </div>
+                            <div class="genero">
+                                <p>Gênero: Ação, Drama, Ficção científica </p>
+                            </div>
+                            <div class="classificacao">
+                                <h4>Classificação:</h4> <img class="logo" src="assets/img/classificacao-12-anos-logo.png" alt="classificação +12"> 
+                            </div>
+                            <div class="elenco">
+                                <p>Elenco: Aaron Taylor Johnson, Elizabeth Olsen, Bryan Crantosn, Ken Watanabe, Sally Hawkins, Al Sapienza, David Strathain</p>
+                            </div>
+                            <div class="duracao">
+                                <p>Duração: 2h30m</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-container">
+                <div class="flipper">
+                    <div class="front">
+                        <div class="item">
+                            <img class="box-serie" src="assets/img/grinch-min.jpg" alt="imagem Grinch">
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="card-title">O Grinch (2000)</h2>
+                                <p class="card-text">Sinopse: Um Grinch que odeia o Natal resolve criar um plano para impedir que os habitantes da pequena cidade de Quemlândia possam comemorar a data festiva. Na véspera de Natal, o Grinch invade as casas para roubar tudo o que esteja relacionado ao Natal.</p>
+                            </div>
+                            <div class="genero">
+                                <p>Gênero: Família, Comédia, Fantasia </p>
+                            </div>
+                            <div class="classificacao">
+                                <h4>Classificação:</h4> <img class="logo" src="assets/img/classificacao-livre-logo.png" alt="classificação livre"> 
+                            </div>
+                            <div class="elenco">
+                                <p>Elenco: Jim Carrey, Taylor Momsen, Jeffrey Tambor, Christine Baranski, Bill Irwin, Molly Shannon</p>
+                            </div>
+                            <div class="duracao">
+                                <p>Duração: 1h44m</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-container">
+                <div class="flipper">
+                    <div class="front">
+                        <div class="item">
+                            <img class="box-serie" src="assets/img/kong-min.jpg" alt="imagem Kong">
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="card-title">Kong: A Ilha da Carveira (2017)</h2>
+                                <p class="card-text">Sinopse: Um ex-militar viaja com um grupo de desbravadores até a Ilha da Caveira, onde irá enfrentar as criaturas que habitam o local além do mítico Kong.</p>
+                            </div>
+                            <div class="genero">
+                                <p>Gênero: Ação, Aventura, Fantasia  </p>
+                            </div>
+                            <div class="classificacao">
+                                <h4>Classificação:</h4> <img class="logo" src="assets/img/classificacao-12-anos-logo.png" alt="classificação +12"> 
+                            </div>
+                            <div class="elenco">
+                                <p>Elenco: Jim Carrey, Taylor Momsen, Jeffrey Tambor, Christine Baranski, Bill Irwin, Molly Shannon</p>
+                            </div>
+                            <div class="duracao">
+                                <p>Duração: 1h58m</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-container">
+                <div class="flipper">
+                    <div class="front">
+                        <div class="item">
+                            <img class="box-serie" src="assets/img/liga-minjpg.jpg" alt="imagem Liga">
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="card-title">Liga da Justiça (2017)</h2>
+                                <p class="card-text">Sinopse: Impulsionado pelo ato altruísta de Superman, Bruce Wayne convoca sua nova aliada Diana Prince para o combate contra um inimigo ainda maior. Juntos, Batman e Mulher-Maravilha buscam um time de meta-humanos.</p>
+                            </div>
+                            <div class="genero">
+                                <p>Gênero: Ação, Aventura, Fantasia, Ficção científica</p>
+                            </div>
+                            <div class="classificacao">
+                                <h4>Classificação:</h4> <img class="logo" src="assets/img/classificacao-12-anos-logo.png" alt="classificação +12"> 
+                            </div>
+                            <div class="elenco">
+                                <p>Elenco: Ben Affleck, Henry Cavill, Amy Adams, Gal Gadot, Ezra Miller, Jason Momoa, Ray Fisher</p>
+                            </div>
+                            <div class="duracao">
+                                <p>Duração: 2h</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-container">
+                <div class="flipper">
+                    <div class="front">
+                        <div class="item">
+                            <img class="box-serie" src="assets/img/maravilha-min.jpg" alt="imagem Maravilha">
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="card-title">Mulher Maravilha (2017)</h2>
+                                <p class="card-text">Sinopse: Quando Diana Prince, Princesa das Amazonas, conhece Steve Trevor, ela descobre que uma guerra está se espalhando pelo mundo e decide deixar seu lar para ajudar.</p>
+                            </div>
+                            <div class="genero">
+                                <p>Gênero: Ação, Aventura, Fantasia </p>
+                            </div>
+                            <div class="classificacao">
+                                <h4>Classificação:</h4> <img class="logo" src="assets/img/classificacao-12-anos-logo.png" alt="classificação +12"> 
+                            </div>
+                            <div class="elenco">
+                                <p>Elenco: Gal Gadot, Chris Pine, Connie Nielsen, Robin Wright, Danny Huston, David Thewlis</p>
+                            </div>
+                            <div class="duracao">
+                                <p>Duração: 2h21m</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-container">
+                <div class="flipper">
+                    <div class="front">
+                        <div class="item">
+                            <img class="box-serie" src="assets/img/yourname-min.jpg" alt="imagem Your Name">
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="card-title">Your Name (2016)</h2>
+                                <p class="card-text">Sinopse: Mitsuha é a filha do prefeito de uma pequena cidade. Taki trabalha em um restaurante em Tóquio e deseja largar o seu emprego. Os dois não se conhecem, mas estão conectados pelos seus sonhos.</p>
+                            </div>
+                            <div class="genero">
+                                <p>Gênero: Romance, Animação, Drama</p>
+                            </div>
+                            <div class="classificacao">
+                                <h4>Classificação:</h4> <img class="logo" src="assets/img/classificacao-livre-logo.png" alt="classificação livre"> 
+                            </div>
+                            <div class="elenco">
+                                <p>Elenco: Ryunosuke Kamiki, Mone Kamishiraishi, Ryo Narita, Aoi Yuki, Nobunaga Shimazaki</p>
+                            </div>
+                            <div class="duracao">
+                                <p>Duração: 1h46m</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flip-container">
+                <div class="flipper">
+                    <div class="front">
+                        <div class="item">
+                            <img class="box-serie" src="assets/img/aranha-min.jpg" alt="imagem Aranha">
+                        </div>
+                    </div>
+                    <div class="back">
+                        <div class="card">
+                            <div class="card-body">
+                                <h2 class="card-title">Homem-Aranha: De Volta ao Lar (2017)</h2>
+                                <p class="card-text">Sinopse: Após atuar ao lado dos Vingadores, Peter Parker voltar para casa. Lutando contra pequenos crimes nas redondezas, ele pensa ter encontrado a missão de sua vida quando o vilão Abutre surge.</p>
+                            </div>
+                            <div class="genero">
+                                <p>Gênero: Ação, Aventura, Ficção científica,Drama</p>
+                            </div>
+                            <div class="classificacao">
+                                <h4>Classificação:</h4> <img class="logo" src="assets/img/classificacao-12-anos-logo.png" alt="classificação +12"> 
+                            </div>
+                            <div class="elenco">
+                                <p>Elenco: Tom Holland, Michael Keaton, Robert Downey Jr., Marisa Tomei, Jon Favreau</p>
+                            </div>
+                            <div class="duracao">
+                                <p>Duração: 2h13m</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function Mostra(cardCobra) {
+            var display = document.getElementById(cardCobra).style.display;
+            if(display == "none")
+                document.getElementById(cardCobra).style.display = 'block';
+            else
+                document.getElementById(cardCobra).style.display = 'none';
+        }
+    </script>
     <script src="https://kit.fontawesome.com/11cf11cbfc.js" crossorigin="anonymous"></script>
     <script src="js/owl/jquery.min.js"></script>
     <script src="js/owl/owl.carousel.min.js"></script>

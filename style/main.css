@@ -50,7 +50,7 @@ header nav a:hover {
     align-items: flex-start;
 }
 
-.filme-principal .descricao {
+.filme-principal .descricao-principal {
     margin-bottom: 40px;
     margin-top: 10px;
 }
@@ -58,7 +58,7 @@ header nav a:hover {
 .titulo-principal {
     font-size: 40px;
     font-family: 'Trebuchet MS', Arial, sans-serif;
-    margin-top: 15%;
+    margin-top: 5%;
 }
 
 .botao {
@@ -67,7 +67,7 @@ header nav a:hover {
     color: white;
     padding: 15px;
     margin-right: 15px;
-    margin-bottom: 60px;
+    margin-bottom: 15px;
     font-size: 12px;
     cursor: pointer;
     transition: .3s ease all;
@@ -90,12 +90,109 @@ header nav a:hover {
     width: 70%;
 }
 
-.box-filme {
+.box-serie {
     height: 100%;
     width: 100%;
     display: block;
 }
 
-.carrossel {
+.carrossel-series {
     margin-top: 10px;
+    cursor: pointer;
 }
+
+.carrossel-filmes {
+    cursor: pointer;
+}    
+
+.carrossel-series h3 {
+    margin-bottom: 8px;
+    margin-left: 10px;
+}
+
+.carrossel-filmes h3 {
+    margin-bottom: 8px;
+    margin-left: 10px;
+}
+
+.flip-container {
+    width: 300px;
+    height: 500px;
+    perspective: 1000px;
+}
+
+.flipper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+.flip-container:hover .flipper{
+    transform: rotateY(180deg);
+}
+
+.card-title {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 15px;
+}
+
+.card-text {
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+.classificacao {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+  }
+.classificacao, .logo {
+    flex:1;
+    margin-left: .5em;
+    width: 30px;
+    height: 30px;
+  }
+
+  .classificacao h4 {
+      margin-left: 10px;
+  }
+
+ .elenco {
+     display: flex;
+     align-items: center;
+     margin-top: 30px;
+     margin-left: 20px;
+     margin-right: 20px;
+ } 
+
+ .genero {
+     margin-left: 20px;
+     margin-top: 30px;
+     margin-right: 20px;
+ }
+
+ .duracao {
+     margin-top: 30px;
+     margin-left: 20px;   
+ }
+
+ 
+
+
+
+ 
