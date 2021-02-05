@@ -6,5 +6,4 @@ O objetivo era recriar (de forma similar e não totalmente fiel) a interface da 
 
 <img src= 'https://i.imgur.com/eSBIjzK.jpg' >
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/C8saYabnYrE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+<img src = 'https://youtu.be/C8saYabnYrE'>
