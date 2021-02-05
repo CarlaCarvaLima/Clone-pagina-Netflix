@@ -2,7 +2,9 @@
 
 Exercício proposto pelo bootcamp da Digital Innovation One: HTML Web Developer
 
-O objetivo era recriar (de forma similar e não totalmente fiel) a interface da Netflix utilizando HTML5, CSS e um pouco de JavaScript e JQuery.
+O objetivo era recriar (de forma similar e não totalmente fiel) a interface da Netflix utilizando Flex Box, HTML5, CSS, JavaScript e um pouco de JQuery.
+
+No momento a página ainda não está totalmente responsiva para dispositivos mobile, mas essa será uma implementação futura.
 
 ## Assista ao vídeo
 
